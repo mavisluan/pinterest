@@ -7,14 +7,16 @@ import { userData } from './static-data'
 
 const Header = ({userData: {logo, name, boards, pins, like, followers, following}}) => (
     <div className='header'>
-        <img className='header-logo' src={logo} alt='logo'/>
+        <img src={logo} alt='logo'/>
         <h1>{name}</h1>
-        <nav className='header-titles'>
+        <nav>
+            <hr />
             <a href='/boards' style={{color:'crimson', fontWeight:'bold'}}>{boards}<span>Boards</span></a>  
             <a href='/pins'>{pins}<span>Pins</span></a> 
             <a href='/like'>{like}<span>Likes</span></a> 
             <a href='/followers'>{followers}<span>Followers</span></a> 
-            <a href='/following'>{following}<span>Following</span></a> 
+            <a href='/following'>{following}<span>Following</span></a>
+            <hr />
         </nav>
     </div>
 )
@@ -48,13 +50,13 @@ const Card = ({ card: { title, owner, pin, imgs} }) => (
 
 const Board = ({ cards }) => (
     <ul className='board'>
-       {cards.map(card => (
-            <li key={card.id} className='board'>
-                <Card card={card}/>
-            </li>
-        ))}
+    {cards.map(card => (
+        <li key={card.id} className='board'>
+            <Card card={card}/>
+        </li>
+    ))}
     </ul>
-   
+
 )
 
 

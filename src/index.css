@@ -14,31 +14,33 @@ body {
 }
 
 
-.header-logo {
+.header img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
 
-.header-titles {
-  border-left: 1px solid lightgray;
-  border-right: 1px solid lightgray;
-  height: 1px;
-  border-left-width: 100px;
-  border-right-width: 100px;
+nav {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-top: 40px;
 }
 
-a {
+nav a {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 40px;
-  padding-left: 100px;
   text-decoration: none;
   color: gray;
+  padding-left: 50px;
+  padding-right: 50px
+}
+
+nav hr {
+  width: 100px;
+  height: 1px;
+  margin-top: 20px;
 }
 
 span {
@@ -96,7 +98,8 @@ li {
 .pin i {
   padding-right: 5px;
 }
-button {
+
+ul button {
   border-radius: 3px;
   font-weight: bold;
   color: crimson;
