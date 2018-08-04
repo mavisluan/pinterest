@@ -20,24 +20,25 @@ const Header = ({userData: {logo, name, boards, pins, like, followers, following
 )
 
 
-const Card = ({ card: { title, owner, imgs} }) => (
+const Card = ({ card: { title, owner, pin, imgs} }) => (
     <div className='card'>
         <div className='card-title'>
             <div style={{ fontWeight:'bold', paddingBottom: '5px'}}>{title}</div>
-            <span>{owner}</span>
+            <span style={{color: 'gray'}}>{owner}</span>
         </div>
         <ul className='image'>
             {imgs.map(img => {
                 const { id, src } = img
-                let width, height;
-                id === 0 
-                ?  width = height ='300px' 
-                : width=height='100px'
-            
+                let image;
+                image = (id === 0) 
+                ? <div>
+                <img src={src} width='300px' height='240px' alt={title}/>
+                <div className='pin'><i className="fas fa-thumbtack"></i>{pin}</div>
+                </div>
+                
+                : <img src={src} width='100px' height='100px' alt={title}/>
                 return (
-                    <li key={id} >       
-                        <img style={{borderRadius:'5px'}} src={src} alt={title} width={width} height={height}/>
-                    </li>
+                    <li key={id}>{image}</li>
                 )
             })}
             <button>Follow</button>

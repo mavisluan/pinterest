@@ -43,8 +43,8 @@ a {
 
 span {
   font-size: small;
-  color: gray;
 }
+
 
 li {
   list-style: none;
@@ -80,6 +80,22 @@ li {
   padding: 5px;
 }
 
+
+.pin {
+  position: relative;
+  top: -30px;
+  border: 1px solid dimgray;
+  border-radius: 3px;
+  background-color: rgba(105, 105, 105, 0.795);
+  width: 50px;
+  color: white;
+  font-size: 10px;
+  padding-left: 5px;
+}
+
+.pin i {
+  padding-right: 5px;
+}
 button {
   border-radius: 3px;
   font-weight: bold;
