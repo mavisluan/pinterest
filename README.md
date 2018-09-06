@@ -1,13 +1,13 @@
 ## Pinterest Project
 
-- This is a simple Pinterest project.
+- This is a simple Pinterest project, built with ReactJS.
 - It shows the list of image cards. 
 
 ## Project Screenshot
 ![](src/project.png)
 
 
-## Instructions for installment
+## Installation Instructions
 
 - clone my repo git clone https://github.com/mavisluan/pinterest.git
 - install all project dependencies with yarn install
