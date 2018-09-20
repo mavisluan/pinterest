@@ -9,6 +9,7 @@
 
 ## Installation Instructions
 
-- clone my repo git clone https://github.com/mavisluan/pinterest.git
-- install all project dependencies with yarn install
-- start the development server with yarn start
+- git clone https://github.com/mavisluan/pinterest.git
+- cd pinterest
+- yarn install
+- yarn start
