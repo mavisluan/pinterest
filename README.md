@@ -1,4 +1,4 @@
-## Pinterest Project
+# Pinterest Project
 
 - This is a simple Pinterest project, built with ReactJS.
 - It shows the list of image cards. 
